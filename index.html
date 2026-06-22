@@ -592,9 +592,9 @@
 <script>
   // ─── EMAILJS CONFIG ──────────────────────────────────────────────
   // Remplacez ces trois valeurs après création de votre compte EmailJS
-  const EMAILJS_PUBLIC_KEY  = 'Sadv664DAH10CKKzB';   // Account > Public Key
-  const EMAILJS_SERVICE_ID  = 'service_h6m72ff';   // Email Services > Service ID
-  const EMAILJS_TEMPLATE_ID = 'template_mwcttx8';  // Email Templates > Template ID
+  const EMAILJS_PUBLIC_KEY  = 'VOTRE_PUBLIC_KEY';   // Account > Public Key
+  const EMAILJS_SERVICE_ID  = 'VOTRE_SERVICE_ID';   // Email Services > Service ID
+  const EMAILJS_TEMPLATE_ID = 'VOTRE_TEMPLATE_ID';  // Email Templates > Template ID
   // ─────────────────────────────────────────────────────────────────
 
   (function() {
@@ -705,7 +705,7 @@
       .catch((err) => {
         statusEl.className = 'email-status error';
         iconEl.textContent = '⚠';
-        msgEl.textContent = 'Échec de l'envoi (' + (err.text || err) + '). Veuillez contacter l'agence directement.';
+        msgEl.textContent = "Échec de l'envoi (" + (err.text || err) + "). Veuillez contacter l'agence directement.";
         console.error('EmailJS error:', err);
       });
   }
@@ -714,7 +714,6 @@
     const nom = document.getElementById('ar-nom').textContent;
     const email = document.getElementById('ar-email').textContent;
     const ref = document.getElementById('ar-ref').textContent;
-    const bien = document.getElementById('ar-bien').textContent;
     const datesign = document.getElementById('ar-datesign').textContent;
     const dt = document.getElementById('ar-datetime').textContent;
     const num = document.getElementById('ar-num').textContent;
